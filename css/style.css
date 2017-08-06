@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 50px;
+}
+
+/*верхнее меню начало*/
+
+.menu-top-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(0,0,30,1);
+
+  z-index: 1;
+}
+
+.menu-top-container .left-menu {
+}
+
+.menu-top-container .left-menu > .row > div {
+  padding: 10px;
+
+  font-size: 12pt;
+  color: rgba(255,255,255,.7);
+
+  cursor: pointer;
+}
+
+.menu-top-container .left-menu > .row > div:hover {
+  color: rgba(255,255,255,1);
+  transition: .2s;
+}
+
+.ent-reg-menu button {
+  margin-top: 3px;
+
+  display: inline-block;
+}
+
+.display-none-row {
+  padding: 9px;
+
+  font-size: 15pt;
+  color: rgba(255,255,255, .8);
+
+  display: none;
+
+  cursor: pointer;
+}
+
+.display-none-row:hover {
+  color: rgba(255,255,255, 1);
+}
+
+.display-none-row span {
+  margin-left: 5px;
+}
+
+/*верхнее меню - конец */
+
+/*превью - начало*/
+
+.preview-container {
+  margin: 10px 0;
+
+  background: url(../img/preview-fon2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.preview-container img {
+  margin: 0 auto;
+  padding: 30px 0;
+
+  display: block;
+}
+
+/*превью - конец*/
+
+
+/*список товаров - начало*/
+
+.sort-menu {
+  padding: 7px 20px;
+
+  border-radius: 3px 3px 0 0;
+  background: rgba(0,0,0,.2);
+}
+
+.sort-menu > .row > div:first-child {
+  font-size: 17pt;
+}
+
+.sort-menu > .row > form div * {
+  margin-top: 5px;
+}
+
+.sort-menu > .row > form div label {
+  padding: 0 5px;
+
+  font-size: 13pt;
+}
+
+.sort-menu .for-form-finding form {
+  float: right;
+}
+
+.main .catalog {
+  margin-top: 5px;
+}
+
+.main .catalog .thumbnail p {
+  padding: 5px;
+
+  height: 40px;
+
+  overflow: hidden;
+}
+
+/*список товаров - конец*/
+
+/*пагинация - начало*/
+
+.pagination-container nav {
+  margin: 0 auto;
+
+  width: 300px;
+}
+
+/*пагинация - конец*/
+
+
+/*медиа*/
+@media only screen and (max-width:991px) {
+  body {
+    margin-top: 100px;
+  }
+
+  .ent-reg-menu {
+    margin-top: 20px;
+  }
+
+  .sort-menu > .row .for-form-finding form {
+    margin: 10px auto;
+
+    width: 295px;
+
+    float: none;
+  }
+
+}
+
+@media only screen and (max-width:796px) {
+  .preview-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .main-row { display:none; }
+  .display-none-row { display: block; }
+
+  .ent-reg-menu {
+    padding-bottom: 10px;
+  }
+
+  .sort-menu > .row .for-form-finding form {
+    float: left;
+  }
+  .sort-menu > .row .for-form-finding form * {
+    margin: 5px 0;
+  }
+}
